@@ -219,6 +219,20 @@ namespace Lista6PR2
                         Console.WriteLine("\nVocê está com obesidade grau III (mórbida).");
                     }
                     break;
+                 case 7:
+                    Console.Write("Digite um número inteiro positivo: ");
+        int n = int.Parse(Console.ReadLine());
+
+        Console.Write("Os divisores de " + n + " são: ");
+
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                Console.Write(i + " ");
+            }
+        }
+
+        Console.WriteLine();
+                    break;
             }
         }
     }
